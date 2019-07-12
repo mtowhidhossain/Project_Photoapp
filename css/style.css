@@ -1,0 +1,380 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* reset end */
+
+
+
+/* Helper Classes Begin */
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+
+/* General Rules */
+
+@font-face {
+  font-family: 'HelveticaNeue-Thin';
+  src: local('./HelveticaNeue-Thin.woff'), url('./HelveticaNeue-Thin.woff') format('woff');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  padding: 40px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#hero {
+  background-image: linear-gradient(rgba(218, 51, 46, 60%), rgba(218, 51, 46, 60%)), url('../img/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;  
+}
+
+.logo {
+  max-width: 25%;
+  float: left;
+}
+
+h2 {
+  font-size: 52px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+.nav li {
+  display: inline-block;  
+}
+
+.nav li a {
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+  padding-bottom: 3px;
+  border-bottom: 4px solid white transparent;
+}
+
+.nav li a:hover {
+  border-bottom: 4px solid white;
+}
+
+#hero h2 {
+  color: white;
+  margin-bottom: 40px;
+  margin-right: 400px; 
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 90px;
+  position: relative;  
+  margin-bottom: 20px;
+}
+
+.imgs {
+  float: right;
+  position: absolute;
+  right: -135px;
+}
+
+.iphone{
+  width: 85%;
+  position: relative;
+  margin-bottom: -240px;
+   
+}
+
+.cta-info {
+  width: 60%;
+  padding-right: 150px;
+  float: left;
+}
+
+.hero-para {
+  font-size: 36px;
+  line-height: 40px;
+  font-family: 'HelveticaNeue-Thin';
+  color: white;
+  margin-bottom: 55px;
+  max-width: 450px;
+}
+
+.cta-button {
+  padding: 23px 35px;
+  background: #282828;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  background: #383737;
+  transition: 0.3s;
+}
+
+.phone-icon {
+  vertical-align: middle;
+  padding-right: 20px;
+}
+
+
+
+/* APP FEATURES */
+
+#app-features .container {
+  text-align: center;
+  padding: 60px 20px;
+  margin-bottom: 40px;
+}
+
+#app-features h2 {
+  color: #8a8a8a;
+  margin-bottom: 10px;
+}
+
+.p-features {
+  font-family: 'HelveticaNeue-Thin';
+  font-size: 22px;
+  line-height: 28px;
+  padding: 40px 130px;
+}
+
+.col-4-app {
+  width: 33.33%;
+  float: left;
+}
+
+.col-4-app p {
+  font-family: 'HelveticaNeue-Thin';
+  font-size: 18px;
+  line-height: 24px;
+  color: #646464;  
+}
+
+.row {
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.row h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 30px 0;
+}
+
+/* .row p {
+  width: 270px;
+} */
+
+
+
+/* NOSE SECTION */
+
+#nose {
+  background: url('../img/nose-bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.download-info {
+  width: 50%;
+  padding: 200px 0;
+}
+
+#nose h2 {
+  margin-bottom: 40px;
+  color: white;
+}
+
+.nose-p {
+  font-size: 24px;
+  line-height: 30px;
+  font-family: 'HelveticaNeue-Thin';
+  padding-bottom: 70px;
+}
+
+.download-btn {
+  padding: 15px;
+  background: #d9332d;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.download-btn:hover {
+  background: #c33934;
+  transition: 0.3s;
+}
+
+.reddish {
+  color: #f55150;
+}
+
+
+/* FOOTER */
+
+footer {
+  background: #2e2e38;
+}
+
+footer .container {
+  padding: 120px 20px;
+}
+
+footer h4 {
+  font-size: 20px;
+}
+
+footer p {
+  font-family: 'HelveticaNeue-Thin';
+}
+
+.ul-posts li {
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 5px;
+  padding-left: 70px;
+}
+
+.col-4-footer {
+  width: 33.33%;
+  float: left;
+  margin-top: 70px;
+  color: white;
+  padding: 30px;
+}
+
+.ul-posts,
+.ul-tweets {
+  margin-top: 25px;
+  font-family: 'HelveticaNeue-Thin';
+}
+
+.reddish-bg {
+  background: url('../img/rectangle.png') no-repeat;
+}
+
+.block {
+  display: block;
+}
+
+.p-about {
+  font-size: 15px;
+  font-style: italic;
+  margin-top: 25px;
+  line-height: 22px;
+}
+
+.ul-tweets li {
+  list-style: none;
+  margin-bottom: 25px;
+  max-width: 200px;
+}
+
+.smallText {
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+
+/* COPYRIGHT */
+
+
+.copyright .container {
+  padding: 40px;
+  text-align: center;
+}
+
+.copyright {
+  background-color: #d7dedc;
+}
+
+.inline {
+  display: inline-block;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.cr,
+.me {
+  margin-right: 40px;
+}
+
+.fb,
+.dr {
+  margin-right: 10px;
+}
+
+.cr:after,
+.me:after {
+  content: "";
+  border: 1px solid #555555;
+  margin-left: 30px;
+}
